@@ -27,6 +27,7 @@ class _CountExampleState extends State<CountExample> {
     final countProvider = Provider.of<CountProvider>(context, listen: false);
     log("build");
     return Scaffold(
+      //appbar
       appBar: AppBar(
         title: Text("Count Example with provider"),
         centerTitle: true,
