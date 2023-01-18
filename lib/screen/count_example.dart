@@ -28,6 +28,14 @@ class _CountExampleState extends State<CountExample> {
 //       countProvider.setCount();
 //     });
 //   }
+//  @override
+//   void initState() {
+//     super.initState();
+//     final countProvider = Provider.of<CountProvider>(context, listen: false);
+//     Timer.periodic(Duration(seconds: 1), (timer) {
+//       countProvider.setCount();
+//     });
+//   }
   @override
   Widget build(BuildContext context) {
     final countProvider = Provider.of<CountProvider>(context, listen: false);
