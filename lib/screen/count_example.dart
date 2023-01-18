@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:mvvm_with_provider/providers/count_provider.dart';
 import 'package:provider/provider.dart';
@@ -21,13 +20,19 @@ class _CountExampleState extends State<CountExample> {
       countProvider.setCount();
     });
   }
-
+//  @override
+//   void initState() {
+//     super.initState();
+//     final countProvider = Provider.of<CountProvider>(context, listen: false);
+//     Timer.periodic(Duration(seconds: 1), (timer) {
+//       countProvider.setCount();
+//     });
+//   }
   @override
   Widget build(BuildContext context) {
     final countProvider = Provider.of<CountProvider>(context, listen: false);
     log("build");
     return Scaffold(
-      //appbar
       appBar: AppBar(
         title: Text("Count Example with provider"),
         centerTitle: true,
