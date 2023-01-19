@@ -7,6 +7,7 @@ import 'package:mvvm_with_provider/screen/count_example.dart';
 import 'package:mvvm_with_provider/screen/example_one.dart';
 import 'package:mvvm_with_provider/screen/favourite/favourite_screen.dart';
 import 'package:mvvm_with_provider/screen/theme.dart';
+import 'package:mvvm_with_provider/screen/value_notify_listner.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -41,7 +42,8 @@ class MyApp extends StatelessWidget {
                 brightness: Brightness.dark,
                 appBarTheme: AppBarTheme(color: Colors.green.shade200),
                 iconTheme: IconThemeData(color: Colors.green)),
-            home: const ThemeScreen(),
+            // home: const ThemeScreen(),
+            home: NotifyListnerScreen(),
           );
         },
       ),
